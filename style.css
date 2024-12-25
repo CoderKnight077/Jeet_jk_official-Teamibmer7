@@ -1,0 +1,495 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+
+header {
+    padding: 20px;
+    margin: 0;
+    /* margin-top: 50px;  */
+    background: linear-gradient(135deg, var(--pentanery-color), var(--quaternary-color));
+}
+
+.image-container {
+
+
+   /* text-align: center;
+
+   align-items: center;
+
+
+   justify-content: center; */
+
+   display: flex;
+
+   align-items: center;
+
+   justify-content: center;
+
+
+/* margin-bottom: 20px; */
+
+}
+
+:root {
+
+    --primary-color : black;
+    --secondary-color : black;
+    --tertiary-color :  black;
+    --quaternary-color :  black;;
+    --pentanery-color :  yellow;
+}
+
+
+ .dark-theme {
+
+    --primary-color : white;;
+    --secondary-color : black;;
+    --tertiary-color : yellow;
+    --quaternary-color : black;;
+    --pentanery-color : white;
+
+
+
+
+
+} 
+.image-container img {
+
+    display: flex;
+
+
+
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 10rem;
+    border: 8px solid var(--tertiary-color);
+}
+
+
+
+.container {
+
+       border: 2px solid var(--primary-color);
+       border-radius: 5rem;
+       overflow: hidden;
+       
+
+
+
+
+
+}
+
+
+/*  New code starts from here  */
+
+.products {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .products h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background-color: #000;
+    border: 2px solid #ffa500;
+    color: #fff;
+    padding: 1.5rem;
+    width: 250px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 20px rgba(230, 151, 6, 0.897);
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /*  new code ends here  */
+.card i {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+header h1, header h4, header h5 {
+    margin: 0;
+    padding: 5px 0 ;
+}
+
+.card h3 {
+
+    color: yellow;
+}
+
+
+h1 {
+
+    text-align: center;
+    color: white;
+    font-size: 2.6
+    rem;
+    
+}
+
+h4  {
+
+    text-align: center;
+    /* color :  rgb(253, 238, 22); */
+
+    color: white;
+    
+    font-size: 1.4rem;
+    font-weight: bolder;
+    
+
+
+
+}
+
+#icon {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    position: fixed; /* Fixed position to stay at the top-right corner */
+    top: 40px; /* Distance from the top */
+    right: 60px; /* Distance from the right */
+    cursor: pointer;
+    z-index: 1000; /* Ensure it stays above other elements */
+    border: none; /* Optional: Removes borders around the image */
+}
+
+
+h5  {
+
+    text-align: center;
+    color :  var(--primary-color);
+    
+    font-size: 0.9
+    rem;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+
+
+}
+
+
+
+/* Navigation styling */
+/* nav ul {
+    list-style-type: none;
+    padding: 10px 0px;
+     display: flex; 
+    justify-content: center;
+    background: linear-gradient(135deg, #fa4007, #8612e4);
+    margin: 0;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+/* }
+
+nav ul li {
+    margin: 1rem 2rem; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+     font-size: 1.2rem;
+    font-weight: bold; 
+    transition: background-color 0.3s, color 0.3s;
+    padding: 5px 5px; 
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #fa4007;
+}  */
+
+
+/*  Navigation styling  */
+
+nav ul {
+
+  list-style-type: none;
+  padding: 10px 0;
+  background : linear-gradient( var(--pentanery-color) , var(--quaternary-color));
+  display: flex;
+margin: 0;
+justify-content: center;
+text-decoration: none;
+
+
+
+
+
+
+
+}
+
+
+nav ul li {
+
+    margin: 10px 0 ;
+    
+    width: calc(100% - 40px); /* Width is 10px less than the full width */
+}
+
+nav ul li a {
+   
+     color: var(--secondary-color);
+     padding: 10px 0;
+     display: flex;
+     text-decoration: none;
+     padding: 5px 10px;
+     font-size: 5 rem;
+     font-weight: bold;
+    
+     justify-content: center;
+     align-items: center;
+    
+     border-radius: 5px;
+     box-sizing: border-box; /* Added box-sizing */
+
+
+
+
+}
+
+nav ul li a:hover {
+
+     background-color: var(--secondary-color);
+     color: #fa4007;
+     /* padding: 5px 5px; */
+
+  
+   
+
+
+
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+section h2 {
+    text-align: center;
+    color: var(--quaternary-color);
+    font-size: 1.5rem;
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+section p, section li {
+    font-size: 1rem;
+    color: white;
+}
+
+/* 
+section {
+
+    background-color: #c180f7;
+    width: 10rem;
+    height: 2rem;
+    overflow: hidden;
+}  */
+.section    {
+
+
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--primary-color);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 95%;
+    text-align: center;
+    box-sizing: border-box;
+
+
+}
+
+
+/* Contact Section as a Card */
+#contact {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--primary-color);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 95%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#contact h2 {
+    color: var(--quaternary-color);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+#contact p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+#contact ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+#contact ul li strong {
+    color: var(--pentanery-color);
+}
+
+/* Responsive Design for the Contact Card */
+@media (max-width: 768px) {
+    #contact {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    #contact h2 {
+        font-size: 1.5rem;
+    }
+
+    #contact p, #contact ul li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    #contact h2 {
+        font-size: 1.3rem;
+    }
+
+    #contact p, #contact ul li {
+        font-size: 0.8rem;
+    }
+}
+
+/*  Nedia queries for responsive design */
+
+@media (max-width: 1024px) {
+    .card {
+        width: calc(
+            100% - 20px);
+    }
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #000; /* Black background for the section */
+    color: white; /* White text color */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.testimonial-card {
+    background-color: #111; /* Darker black for contrast */
+    border: 1px solid #ff9800; /* Orange border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 15px rgba(116, 78, 23, 0.836); /* Subtle shadow with orange tint */
+}
+
+.client-image {
+    flex-shrink: 0;
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    box-shadow: 10px 25px 35px rgba(0, 0, 0, 0.5); /* Circular shadow */
+}
+
+.client-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-content {
+    flex-grow: 1;
+}
+
+.testimonial-content p {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.testimonial-content h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: bold;
+    color: #ff9800; /* Orange color for the client name */
+}
+
+.testimonial-content em {
+    font-size: 0.9rem;
+    color: #aaa; /* Gray for the designation */
+}
