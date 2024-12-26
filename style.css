@@ -627,3 +627,46 @@ section {
     }
 }
 
+/*  CSS FOR FOOTER SECTION  */
+
+
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer .footer-content {
+    margin-bottom: 10px;
+  }
+  
+  footer .footer-content p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  footer .footer-links ul li {
+    display: inline;
+  }
+  
+  footer .footer-links ul li a {
+    color: YELLOW;
+    text-decoration: none;
+  }
+  
+  footer .footer-links ul li a:hover {
+    text-decoration: underline;
+  }
+  
+
