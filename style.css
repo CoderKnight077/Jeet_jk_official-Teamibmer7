@@ -172,6 +172,8 @@ h4  {
     
     font-size: 1.4rem;
     font-weight: bolder;
+
+    
     
 
 
@@ -495,6 +497,8 @@ section {
 }
 
 
+/*  Jumping animation  */
+
 @keyframes spiral {
     0% {
         transform: translateY(100px) rotate(0deg) scale(0.5);
@@ -513,12 +517,112 @@ section {
 .card {
     opacity: 0; /* Start hidden */
     transform: translateY(100px) rotate(0deg) scale(0.5); /* Start position */
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 3s ease, opacity 0.3s ease;
 }
 
 .card.show {
-    animation: spiral 3s ease-out; /* Spiral animation */
+    animation: spiral 8s ease-out; /* Spiral animation */
     opacity: 1; /* Fully visible after animation */
     transform: translateY(0) rotate(360deg) scale(1);
+}
+
+/*  Spiral animation for  fudindia and Photographer's kitchen  */
+
+/* Spiral animation for all cards */
+@keyframes spiral {
+    0% {
+        transform: translateY(100px) rotate(0deg) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-50px) rotate(180deg) scale(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(0) rotate(360deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Right direction animation */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%) scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Left direction animation */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%) scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Base styles for cards */
+.card {
+    opacity: 0; /* Start hidden */
+    transform: translateY(100px) scale(0.5); /* Start position */
+    transition: transform 3s ease, opacity 0.3s ease;
+}
+
+/* Spiral animation for most cards */
+.card.show {
+    animation: spiral 3s ease-out; /* Spiral animation */
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Right slide for fudindia card */
+.card.fudindia.show {
+    animation: slideInRight 3s ease-out;
+}
+
+/* Left slide for photographer kitchen card */
+.card.photographer-kitchen.show {
+    animation: slideInLeft 4s ease-out;
+}
+
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .testimonials {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .testimonial-card {
+        max-width: 200%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .client-image {
+        width: 40%;
+        height: auto;
+    }
+
+    .testimonial-content {
+        width: 80%;
+        text-align: left;
+    }
+
+    .testimonial-content p {
+        font-size: 1rem;
+    }
+
+    .testimonial-content h4 {
+        font-size: 1.5rem;
+    }
 }
 
