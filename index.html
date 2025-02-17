@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JEET KURI - The Content Creator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="animation.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f93074ea26.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="image-container">
+        <img src="jeetjkinfluencer.webp" alt="Jeet Kuri" /> <br />
+        <br />
+        <img src="moon.png" id="icon" />
+      </div>
+      <h4>JEET KURI</h4>
+      <h4>
+        <span style="color: rgba(17, 10, 10, 0.466)">
+          ( Demo / prototype website / Beta Testing *)
+        </span>
+      </h4>
+      <h1>CONTENT CREATOR</h1>
+      <h4>Video Creator of Team Ibmer7</h4>
+      <h5>Email: jeetjk370@gmail.com</h5>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Business Deal</a></li>
+        <li><a href="#about">Team Ibmer7</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="products">
+      <h2>Here's what we will do for you</h2>
+      <div class="card-container">
+        <div class="card" id="home" >
+          <div class="card-layer"></div>
+          <div class="card-content"    >
+            <h3>Home</h3>
+            <p>
+              Jeet is an emerging content creator passionate about building a
+              creative community. He collaborates with various brands and shares
+              inspiring content on Instagram and YouTube.
+            </p>
+          </div>
+        </div>
+        <div class="card" id="products" >
+          <div class="card-layer"></div>
+          <div class="card-content"           >
+            <h3>Business Deal</h3>
+           
+            <p>
+              Jeet has partnered with FUD India and multiple businesses, forming
+              a solid brand-building team. Team IBMer7, led by Bishal Chandra
+              Dey, is growing rapidly with 33k Instagram followers and 12k+
+              YouTube subscribers.
+            </p>
+          </div>
+        </div>
+        <div class="card" id="about" >
+          <div class="card-layer"></div>
+          <div class="card-content"              >
+            <h3>Team IBMer7</h3>
+            <img src="Teamibmer7.jpeg" alt="">
+            <p>
+              A talented team of content creators and strategists working
+              together to create engaging and impactful content.
+            </p>
+          </div>
+        </div>
+        <div class="card" id="contact" >
+          <div class="card-layer"></div>
+          <div class="card-content"     >
+            <h3>Contact</h3>
+            <p>
+              Feel free to reach out to Jeet for collaborations and inquiries.
+              He is committed to creating meaningful and inspiring content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <h2>Hear from our <span style="color: orange">Happy Clients</span></h2>
+      <div class="testimonial-card , card fudindia">
+        <div class="client-image">
+          <img src="fudindia.jpeg" alt="Client Image" />
+        </div>
+        <div class="testimonial-content">
+          <p>
+            "Collaborating with Jeet and the ibmer7 team was a game-changer for
+            our business. They didn't just create a robust online presence for
+            us but also crafted and executed a marketing strategy that truly
+            resonated with our audience. Their expertise helped us scale our
+            business beyond expectations!"
+          </p>
+          <h4>Fudindia team</h4>
+          <p><em>Founder of Fudindia team </em></p>
+        </div>
+      </div>
+      <div class="testimonial-card , card photographer-kitchen">
+        <div class="client-image">
+          <img src="photographer_kitchen.jpeg" alt="Client Image" />
+        </div>
+        <div class="testimonial-content">
+          <p>
+            "Thanks to Jeet and Team ibmer7, Photographer Kitchen became a go-to
+            destination for foodies in Lumding. Their ability to highlight our
+            culinary offerings online with precision and creativity helped us
+            grow our customer base significantly. We’re thrilled with the
+            results!"
+          </p>
+          <h4>Photographer kitchen</h4>
+          <p><em> Founder of Photographer kitchen , Lumding </em></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+          <p>
+            <strong>Disclaimer:</strong> All the details listed above are part of a prototype website. 
+            We do not intend to violate any privacy policies or collect any personal information. 
+            This site is created solely for demonstration and testing purposes.
+          </p>
+          <p>© 2024 JEET KURI - All rights reserved.</p>
+          <p>
+            Designed and developed for <strong>Team Ibmer7</strong> by Sanjay Acharjee. For inquiries, contact 
+            <a href="mailto:coderknight77@ggmail.com"> Coderknight77@ggmail.com</a>.
+          </p>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Business Deal</a></li>
+            <li><a href="#about">Team Ibmer7</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </footer>
+      
+
+    <script>
+      var icon = document.getElementById("icon");
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        icon.src = document.body.classList.contains("dark-theme")
+          ? "sun.png"
+          : "moon.png";
+      };
+    </script>
+  </body>
+</html>
